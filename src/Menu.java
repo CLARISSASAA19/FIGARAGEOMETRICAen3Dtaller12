@@ -12,18 +12,21 @@ public class Menu {
         System.out.println("1. Triángulo");
         System.out.println("2. Cuadrado");
         System.out.println("3. Círculo");
+        System.out.println("4. Cubo");
+        System.out.println("5. Piramide");
+        System.out.println("6. Esfera");
         System.out.println("0. Salir");
         System.out.print("Opción: ");
     }
 
     public int obtenerOpcion() {
         int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea después de leer el número
+        scanner.nextLine();
         return opcion;
     }
 
     public Punto[] ingresarPuntos() {
-        Punto[] listaPuntos = new Punto[3]; // Para Triángulo, cambiar el tamaño si es necesario
+        Punto[] listaPuntos = new Punto[3];
         System.out.println("Ingrese las coordenadas de los puntos:");
 
         for (int i = 0; i < listaPuntos.length; i++) {
