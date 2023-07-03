@@ -21,5 +21,4 @@ class Cuadrado extends Figura {
         double distanciaY = p2.y - p1.y;
         return Math.sqrt(Math.pow(distanciaX, 2) + Math.pow(distanciaY, 2));
     }
-
 }

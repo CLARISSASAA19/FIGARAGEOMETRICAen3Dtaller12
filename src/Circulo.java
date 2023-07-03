@@ -1,4 +1,4 @@
-public class Circulo extends Figura {
+class Circulo extends Figura {
     private double radio;
 
     public Circulo(Punto[] listaPuntos2, double radio) {
@@ -16,3 +16,4 @@ public class Circulo extends Figura {
         return Math.PI * Math.pow(radio, 2);
     }
 }
+

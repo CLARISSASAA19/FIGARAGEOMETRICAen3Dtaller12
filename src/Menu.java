@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+class Menu {
 
-public class Menu {
     private Scanner scanner;
+    private List<Figura>listaFiguras;
 
     public Menu() {
         scanner = new Scanner(System.in);
+        listaFiguras = new ArrayList<>();
     }
 
     public void mostrarMenu() {
@@ -17,6 +21,13 @@ public class Menu {
         System.out.println("6. Esfera");
         System.out.println("0. Salir");
         System.out.print("Opción: ");
+    }
+    public void agregarFigura(Figura figura) {
+        listaFiguras.add(figura);
+    }
+
+    public List<Figura> getListaFiguras() {
+        return listaFiguras;
     }
 
     public int obtenerOpcion() {
@@ -81,10 +92,10 @@ public class Menu {
     }
 
     public void mostrarResultados(Figura figura) {
+        listaFiguras.add(figura);
         System.out.println("\nResultados:");
         System.out.println("Perímetro: " + figura.calcularPerimetro());
         System.out.println("Área: " + figura.calcularArea());
         System.out.println();
     }
 }
-

@@ -1,17 +1,16 @@
-import java.util.Scanner;
+class Cubo extends Cuadrado {
 
-public class Cubo {
-    private double lado;
-
-    public Cubo(double lado) {
-        this.lado = lado;
+    public Cubo(double ladoCubo) {
+        super(new Punto[]{
+                new Punto(0, 0),
+                new Punto(ladoCubo, 0),
+                new Punto(ladoCubo, ladoCubo),
+                new Punto(0, ladoCubo)
+        });
     }
 
     public double calcularVolumen() {
-        return Math.pow(lado, 3);
-    }
-
-    public double calcularArea() {
-        return 6 * Math.pow(lado, 2);
+        return Math.pow(listaPuntos[1].x, 3);
     }
 }
+

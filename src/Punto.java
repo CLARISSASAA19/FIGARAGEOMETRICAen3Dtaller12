@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
-public class Punto {
-    protected double x;
-    protected double y;
+class Punto {
+    public double x;
+    public double y;
 
     public Punto(double x, double y) {
         this.x = x;

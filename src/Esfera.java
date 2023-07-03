@@ -1,8 +1,7 @@
-public class Esfera {
+class Esfera extends Circulo {
     private double radio;
-
-    public Esfera(double radio) {
-        this.radio = radio;
+    public Esfera(double radioEsfera) {
+        super(new Punto[]{new Punto(0, 0)}, radioEsfera);
     }
 
     public double calcularVolumen() {
